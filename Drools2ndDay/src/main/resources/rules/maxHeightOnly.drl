@@ -1,0 +1,11 @@
+package com.sample
+ 
+import com.sample.Member;
+
+rule "only maxHeight"
+  when
+    memMaxHeight: Member( section == "HR", maxheight : height )
+    not Member( section == "HR", height > maxheight)
+  then
+    System.out.println("Rule_1: 가장 키가 큰 사람의 키는 "+maxheight+"cm 입니다.");
+end

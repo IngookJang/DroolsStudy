@@ -1,0 +1,13 @@
+package com.sample
+ 
+import com.sample.Member;
+
+rule "maxHeight with name"
+  when
+    memMaxHeight: Member( section == "HR", maxheight : height )
+    not Member( section == "HR", height > maxheight)
+  then
+//    System.out.println("Rule_2: 가장 키가 큰 사람은 "+memMaxHeight.getName() + "입니다.");
+    System.out.println("Rule_2: 가장 키가 큰 사람은　" + memMaxHeight.getName() +"이며, 키는 " + memMaxHeight.getHeight() + "cm 입니다.");
+         
+end
