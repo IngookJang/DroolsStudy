@@ -43,10 +43,10 @@ public class DroolsTest {
 			while(true){
 
 				// 멤버 생성 
-				Member memFact1 = new Member("장인국", "HR", 178);
-				Member memFact2 = new Member("이혜선", "HR", 170);
-				Member memFact3 = new Member("이동훈", "HR", 165);
-				Member memFact4 = new Member("정민기", "HR", 174);
+				Member memFact1 = new Member("Jang", "HR", 178);
+				Member memFact2 = new Member("Lee", "HR", 170);
+				Member memFact3 = new Member("Shin", "HR", 165);
+				Member memFact4 = new Member("Jung", "HR", 174);
 	
 				//멤버 working memory에 삽입 
 				kSession.insert(memFact1);
